@@ -1,4 +1,4 @@
-const str = "The first test string";
+const str = 'The first test string';
 const number = 1;
 const bool = true;
 const nullVar = null;

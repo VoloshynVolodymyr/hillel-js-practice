@@ -1,5 +1,5 @@
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
-const mutatedNumbers = numbers.map((number, i) => number * i)
+const mutatedNumbers = numbers.map((number, i) => number * i);
 
-console.log(mutatedNumbers)
+console.log(mutatedNumbers);

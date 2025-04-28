@@ -1,28 +1,28 @@
-import Book from './Book.js'
+import Book from './Book.js';
 
 export default class EBook extends Book {
-	#format
+	#format;
 
-	constructor(title, author, year, format){
-		super(title, author, year)
-		this.format = format
+	constructor(title, author, year, format) {
+		super(title, author, year);
+		this.format = format;
 	}
 
 	get format() {
-		return this.#format
+		return this.#format;
 	}
 	set format(value) {
-		if (typeof value !== "string") {
-			throw new Error("Format must be a string!")
+		if (typeof value !== 'string') {
+			throw new Error('Format must be a string!');
 		}
-		this.#format = value
+		this.#format = value;
 	}
 
-	static createInstanceFromBook(book, format){
-		return new EBook(book.title, book.author, book.year, format)
+	static createInstanceFromBook(book, format) {
+		return new EBook(book.title, book.author, book.year, format);
 	}
-	printInfo(){
-		super.printInfo()
-		console.log(`Format : ${this.format}`)
+	printInfo() {
+		super.printInfo();
+		console.log(`Format : ${this.format}`);
 	}
 }

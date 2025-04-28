@@ -1,5 +1,5 @@
-function printWithDelay(text, delay){
-	setTimeout(() => console.log(`${text} in ${delay} milliseconds`), delay)
+function printWithDelay(text, delay) {
+	setTimeout(() => console.log(`${text} in ${delay} milliseconds`), delay);
 }
 
-printWithDelay(`This is promise with delay`, 2000)
+printWithDelay(`This is promise with delay`, 2000);

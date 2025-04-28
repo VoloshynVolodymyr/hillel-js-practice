@@ -1,17 +1,33 @@
 {
-  "name": "hillel-js-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./nodeBasics/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "chalk": "^5.4.1"
-  }
+	"name": "hillel-js-practice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node ./nodeBasics/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install",
+		"eslint:all": "npx eslint .",
+		"prettier:write": "npx prettier --write ."
+	},
+	"lint-staged": {
+		"*.{js,json}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"chalk": "^5.4.1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.1",
+		"eslint": "^9.25.1",
+		"globals": "^16.0.0",
+		"lint-staged": "^15.5.1",
+		"prettier": "^3.5.3"
+	}
 }
