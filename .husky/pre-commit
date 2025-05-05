@@ -1,0 +1,10 @@
+# Код, що перевіряє увесь проект
+# echo "Start checking code..."
+# npm run prettier:write
+# npm run eslint:all
+# echo "changing is done"
+
+# Код, що перевіряє лише змінені файли
+echo "Start checking staged files..."
+npx lint-staged
+echo "Lint-staged finished"
